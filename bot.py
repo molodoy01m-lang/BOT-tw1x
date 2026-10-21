@@ -1610,11 +1610,12 @@ async def send_girl_ticket(ctx):
             "<a:a_pink_dot:1562471740410560532> Предоставьте доказательства\n"
             "<a:a_pink_dot:1562471740410560532> Модераторы рассмотрят ваш запрос\n\n"
             "<a:15770animatedarrowyellow:1562455396814290994> Чтобы получить роль, откройте тикет или обратитесь к администрации сервера."
-        ), 
+        ),
         color=discord.Color.from_rgb(255, 105, 180)
     )
+    
+    await ctx.send(embed=img_embed)
     await ctx.send(embed=text_embed, view=GirlTicketMainView())
-
 
 @bot.command()
 async def send_ticket(ctx):
