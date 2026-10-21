@@ -1603,8 +1603,13 @@ async def send_girl_ticket(ctx):
         await ctx.send(file=file, embed=img_embed)
     text_embed = discord.Embed(
         description=(
-            "<:793670heart:1503151722611347586> **Роль Девушка**\n\n"
-            "<a:a_pink_dot:1503133833548271646> Нажмите кнопку ниже для создания тикета."
+            ":132078whitespaceheart: **Роль Девушка**\n\n"
+            ":205667glowingdotwhite: Нажмите кнопку ниже, чтобы создать тикет для верификации и получения роли Девушка\n\n"
+            ":15770animatedarrowyellow: **Информация**\n"
+            ":205667glowingdotwhite: Создайте тикет для верификации\n"
+            ":205667glowingdotwhite: Предоставьте доказательства\n"
+            ":205667glowingdotwhite: Модераторы рассмотрят ваш запрос\n\n"
+            ":15770animatedarrowyellow: Чтобы получить роль, откройте тикет или обратитесь к администрации сервера."
         ), 
         color=discord.Color.from_rgb(255, 105, 180)
     )
@@ -1619,8 +1624,13 @@ async def send_ticket(ctx):
         await ctx.send(file=file, embed=img_embed)
     text_embed = discord.Embed(
         description=(
-            "<:18690member:1503151722611347586> **Система поддержки ALASH PROJECT KZ**\n\n"
-            "<a:15770animatedarrowyellow:1503049767016595586> **Возникли вопросы или проблемы? Опишите ситуацию**"
+            ":739224member: **Система поддержки ALASH PROJECT KZ**\n\n"
+            ":15770animatedarrowyellow: **Возникли вопросы, проблемы или нужна помощь? Опишите ситуацию**\n\n"
+            ":15770animatedarrowyellow: **Что можно оформить через тикет?**\n"
+            ":205667glowingdotwhite: Жалобы на игроков или пользователей.\n"
+            ":205667glowingdotwhite: Вопросы по серверу или Discord.\n"
+            ":205667glowingdotwhite: Проблемы с верификацией.\n"
+            ":205667glowingdotwhite: Ошибки, баги и технические неполадки."
         ), 
         color=discord.Color.from_rgb(57, 255, 20)
     )
@@ -1635,9 +1645,13 @@ async def send_media(ctx):
         await ctx.send(file=file, embed=img_embed)
     text_embed = discord.Embed(
         description=(
-            "<a:a_pink_dot:1503133833548271646> Наш проект готов к сотрудничеству с медиа игроками.\n\n"
-            "<a:15770animatedarrowyellow:1503049767016595586> **Что вы получите**\n"
-            "<a:a_pink_dot:1503133833548271646> Роль <@&{MEDIA_ROLE_ID}>"
+            ":205667glowingdotwhite: Наш проект готов к сотрудничеству с вами как с медиа игроком (TikTok стримы/видео).\n\n"
+            ":205667glowingdotwhite: Мы предлагаем партнерство, где ваша аудитория и активность помогают продвижению проекта.\n\n"
+            ":205667glowingdotwhite: Мы уверены, что совместно сможем создавать качественный и интересный контент.\n\n"
+            ":15770animatedarrowyellow: **Что вы получите**\n"
+            ":205667glowingdotwhite: Привилегию на сервере \"Медиа\"\n"
+            ":205667glowingdotwhite: Роль в Discord <@&1548371779544813603>\n"
+            ":205667glowingdotwhite: В привилегию \"MEDIA\" входит весь функционал привилегии \"ALASH\""
         ).format(MEDIA_ROLE_ID=MEDIA_ROLE_ID), 
         color=discord.Color.from_rgb(180, 0, 0)
     )
@@ -1651,14 +1665,14 @@ async def send_clan(ctx):
         description=(
             "Создай клан, собери команду и бросай вызов другим кланам в матчах 5v5\n\n"
             "<a:15770animatedarrowyellow:1503049767016595586> **Как начать**\n"
-            "<a:a_pink_dot:1503133833548271646> Нажми \"Создать клан\" и введи название и тег\n"
-            "<a:a_pink_dot:1503133833548271646> Пригласи минимум 4 участников через \"Мой клан\"\n"
-            "<a:a_pink_dot:1503133833548271646> Бросай вызовы через меню управления кланом\n\n"
+            "<a:205667glowingdotwhite:1503133833548271646> Нажми \"Создать клан\" и введи название и тег\n"
+            "<a:205667glowingdotwhite:1503133833548271646> Пригласи минимум 4 участников через \"Мой клан\"\n"
+            "<a:205667glowingdotwhite:1503133833548271646> Бросай вызовы через меню управления кланом\n\n"
             "<a:15770animatedarrowyellow:1503049767016595586> **Правила**\n"
-            "<a:a_pink_dot:1503133833548271646> Минимум 5 участников для участия в войнах\n"
-            "<a:a_pink_dot:1503133833548271646> Cooldown между вызовами одному клану — 2 ч.\n"
-            "<a:a_pink_dot:1503133833548271646> Если клан не собрал 5 игроков за 5 мин до матча — NO-SHOW\n"
-            "<a:a_pink_dot:1503133833548271646> Тег клана автоматически добавляется к нику каждого участника\n\n"
+            "<a:205667glowingdotwhite:1503133833548271646> Минимум 5 участников для участия в войнах\n"
+            "<a:205667glowingdotwhite:1503133833548271646> Cooldown между вызовами одному клану — 2 ч.\n"
+            "<a:205667glowingdotwhite:1503133833548271646> Если клан не собрал 5 игроков за 5 мин до матча — NO-SHOW\n"
+            "<a:205667glowingdotwhite:1503133833548271646> Тег клана автоматически добавляется к нику каждого участника\n\n"
             "**Alash project kz**"
         ),
         color=discord.Color.from_rgb(180, 0, 0)
