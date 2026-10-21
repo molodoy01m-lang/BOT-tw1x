@@ -1603,13 +1603,13 @@ async def send_girl_ticket(ctx):
         await ctx.send(file=file, embed=img_embed)
     text_embed = discord.Embed(
         description=(
-            ":132078whitespaceheart: **Роль Девушка**\n\n"
-            ":205667glowingdotwhite: Нажмите кнопку ниже, чтобы создать тикет для верификации и получения роли Девушка\n\n"
-            ":15770animatedarrowyellow: **Информация**\n"
-            ":205667glowingdotwhite: Создайте тикет для верификации\n"
-            ":205667glowingdotwhite: Предоставьте доказательства\n"
-            ":205667glowingdotwhite: Модераторы рассмотрят ваш запрос\n\n"
-            ":15770animatedarrowyellow: Чтобы получить роль, откройте тикет или обратитесь к администрации сервера."
+            "<a:132078whitespaceheart:1562454784387317920> **Роль Девушка**\n\n"
+            "<a:205667glowingdotwhite:1562461752434892921 Нажмите кнопку ниже, чтобы создать тикет для верификации и получения роли Девушка\n\n"
+            "<a:15770animatedarrowyellow:1503049767016595586> **Информация**\n"
+            "<a:205667glowingdotwhite:1562461752434892921> Создайте тикет для верификации\n"
+            "<a:205667glowingdotwhite:1562461752434892921> Предоставьте доказательства\n"
+            "<a:205667glowingdotwhite:1562461752434892921> Модераторы рассмотрят ваш запрос\n\n"
+            "<a:15770animatedarrowyellow:1503049767016595586> Чтобы получить роль, откройте тикет или обратитесь к администрации сервера."
         ), 
         color=discord.Color.from_rgb(255, 105, 180)
     )
@@ -1624,13 +1624,13 @@ async def send_ticket(ctx):
         await ctx.send(file=file, embed=img_embed)
     text_embed = discord.Embed(
         description=(
-            ":739224member: **Система поддержки ALASH PROJECT KZ**\n\n"
-            ":15770animatedarrowyellow: **Возникли вопросы, проблемы или нужна помощь? Опишите ситуацию**\n\n"
-            ":15770animatedarrowyellow: **Что можно оформить через тикет?**\n"
-            ":205667glowingdotwhite: Жалобы на игроков или пользователей.\n"
-            ":205667glowingdotwhite: Вопросы по серверу или Discord.\n"
-            ":205667glowingdotwhite: Проблемы с верификацией.\n"
-            ":205667glowingdotwhite: Ошибки, баги и технические неполадки."
+            "<a:739224member:1562462471183401093> **Система поддержки ALASH PROJECT KZ**\n\n"
+            "<a:15770animatedarrowyellow:1503049767016595586> **Возникли вопросы, проблемы или нужна помощь? Опишите ситуацию**\n\n"
+            "<a:15770animatedarrowyellow:1503049767016595586> **Что можно оформить через тикет?**\n"
+            "<a:205667glowingdotwhite:1562461752434892921> Жалобы на игроков или пользователей.\n"
+            "<a:205667glowingdotwhite:1562461752434892921> Вопросы по серверу или Discord.\n"
+            "<a:205667glowingdotwhite:1562461752434892921> Проблемы с верификацией.\n"
+            "<a:205667glowingdotwhite:1562461752434892921> Ошибки, баги и технические неполадки."
         ), 
         color=discord.Color.from_rgb(57, 255, 20)
     )
@@ -1645,13 +1645,13 @@ async def send_media(ctx):
         await ctx.send(file=file, embed=img_embed)
     text_embed = discord.Embed(
         description=(
-            ":205667glowingdotwhite: Наш проект готов к сотрудничеству с вами как с медиа игроком (TikTok стримы/видео).\n\n"
-            ":205667glowingdotwhite: Мы предлагаем партнерство, где ваша аудитория и активность помогают продвижению проекта.\n\n"
-            ":205667glowingdotwhite: Мы уверены, что совместно сможем создавать качественный и интересный контент.\n\n"
-            ":15770animatedarrowyellow: **Что вы получите**\n"
-            ":205667glowingdotwhite: Привилегию на сервере \"Медиа\"\n"
-            ":205667glowingdotwhite: Роль в Discord <@&1548371779544813603>\n"
-            ":205667glowingdotwhite: В привилегию \"MEDIA\" входит весь функционал привилегии \"ALASH\""
+            "<a:205667glowingdotwhite:1562461752434892921> Наш проект готов к сотрудничеству с вами как с медиа игроком (TikTok стримы/видео).\n\n"
+            "<a:205667glowingdotwhite:1562461752434892921> Мы предлагаем партнерство, где ваша аудитория и активность помогают продвижению проекта.\n\n"
+            "<a:205667glowingdotwhite:1562461752434892921> Мы уверены, что совместно сможем создавать качественный и интересный контент.\n\n"
+            "<a:15770animatedarrowyellow:1503049767016595586> **Что вы получите**\n"
+            "<a:205667glowingdotwhite:1562461752434892921> Привилегию на сервере \"Медиа\"\n"
+            "<a:205667glowingdotwhite:1562461752434892921> Роль в Discord <@&1548371779544813603>\n"
+            "<a:205667glowingdotwhite:1562461752434892921> В привилегию \"MEDIA\" входит весь функционал привилегии \"ALASH\""
         ).format(MEDIA_ROLE_ID=MEDIA_ROLE_ID), 
         color=discord.Color.from_rgb(180, 0, 0)
     )
