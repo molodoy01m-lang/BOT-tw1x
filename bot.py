@@ -1582,11 +1582,11 @@ async def send_voice_panel(ctx):
     embed = discord.Embed(
         description=(
             "# **Управление приватной комнатой**\n\n"
-            "🔓 • Открыть канал\n"
-            "👥 • Добавить пользователя\n"
-            "✏️ • Переименовать канал\n\n"
-            "👑 • Передать канал\n"
-            "🔒 • Закрыть канал\n"
+            "<:685116unlock:1562476005250039979> • Открыть канал\n"
+            "<:40421adduser:1562476318082338877> • Добавить пользователя\n"
+            "<:904340pencil:1562476055518904490> • Переименовать канал\n\n"
+            "<:807617yellowcrown:1562476141787222078> • Передать канал\n"
+            "<:998751lock:1562476028687945838> • Закрыть канал\n"
             "🚫 • Выгнать пользователя\n\n"
             "*Кнопки активны в вашем войсе.*"
         ), 
@@ -1597,7 +1597,7 @@ async def send_voice_panel(ctx):
 
 @bot.command()
 async def send_girl_ticket(ctx):
-    file = await get_discord_file_from_url(TICKET_BANNER_URL, "GIRL_BANNER_URL")
+    file = await get_discord_file_from_url(GIRL_BANNER_URL, "banner_girl.png")
     if file:
         img_embed = discord.Embed(color=discord.Color.from_rgb(255, 105, 180)).set_image(url="attachment://GIRL_BANNER_URL")
         await ctx.send(file=file, embed=img_embed)
