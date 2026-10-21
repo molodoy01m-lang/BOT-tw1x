@@ -1596,18 +1596,13 @@ async def send_voice_panel(ctx):
 
 @bot.command()
 async def send_girl_ticket(ctx):
-    # Удаляем сообщение с командой от пользователя, чтобы чат был чистым
     try:
         await ctx.message.delete()
     except:
         pass
-
-    # Отправляем баннер
     img_embed = discord.Embed(color=discord.Color.from_rgb(255, 105, 180))
     img_embed.set_image(url=GIRL_BANNER_URL)
     await ctx.send(embed=img_embed)
-    
-    # Отправляем текст с кнопкой
     text_embed = discord.Embed(
         description=(
             "<a:132078whitespaceheart:1562454784387317920> **Роль Девушка**\n\n"
@@ -1620,7 +1615,7 @@ async def send_girl_ticket(ctx):
         ),
         color=discord.Color.from_rgb(255, 105, 180)
     )
-    await ctx.send(embed=text_embed, view=GirlTicketMainView()
+    await ctx.send(embed=text_embed, view=GirlTicketMainView())
 
 @bot.command()
 async def send_ticket(ctx):
