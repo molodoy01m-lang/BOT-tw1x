@@ -1594,15 +1594,22 @@ async def send_voice_panel(ctx):
     )
     await ctx.send(embed=embed, view=VoiceControlPanel())
 
-
 @bot.command()
 async def send_girl_ticket(ctx):
-    file = await get_discord_file_from_url(GIRL_BANNER_URL, "banner_girl.png")
-    if file:
-        img_embed = discord.Embed(color=discord.Color.from_rgb(255, 105, 180)).set_image(url="attachment://GIRL_BANNER_URL")
-        await ctx.send(file=file, embed=img_embed)
+    # Удаляем сообщение с командой от пользователя, чтобы чат был чистым
+    try:
+        await ctx.message.delete()
+    except:
+        pass
+
+    # Отправляем баннер
+    img_embed = discord.Embed(color=discord.Color.from_rgb(255, 105, 180))
+    img_embed.set_image(url=GIRL_BANNER_URL)
+    await ctx.send(embed=img_embed)
+    
+    # Отправляем текст с кнопкой
     text_embed = discord.Embed(
-        description=( 
+        description=(
             "<a:132078whitespaceheart:1562454784387317920> **Роль Девушка**\n\n"
             "<a:a_pink_dot:1562471740410560532> Нажмите кнопку ниже, чтобы создать тикет для верификации и получения роли Девушка\n\n"
             "<a:15770animatedarrowyellow:1562455396814290994> **Информация**\n"
@@ -1613,9 +1620,7 @@ async def send_girl_ticket(ctx):
         ),
         color=discord.Color.from_rgb(255, 105, 180)
     )
-    
-    await ctx.send(embed=img_embed)
-    await ctx.send(embed=text_embed, view=GirlTicketMainView())
+    await ctx.send(embed=text_embed, view=GirlTicketMainView()
 
 @bot.command()
 async def send_ticket(ctx):
