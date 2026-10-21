@@ -56,7 +56,7 @@ clans_db = {}
 user_clan_mapping = {}
 active_lobbies = {}
 
-GIRL_BANNER_URL = "https://media.discordapp.net/attachments/1544309714962227230/1557815971660435456/banner_girl.png?ex=6ac92cae&is=6ac7db2e&hm=250e0baedfe61fc5baff21e59e0e6bd61f5e494d88ade315be12b6e3c199c916&=&format=webp&quality=lossless&width=2048&height=729"
+GIRL_BANNER_URL = https://cdn.discordapp.com/attachments/1544309714962227230/1558116524093341727/banner_girl.png?ex=6ad96dd7&is=6ad81c57&hm=0df121c732dd219e0a893923b0744965c8b52b8f8f44a02ebe03e794b1746e9e&
 MEDIA_BANNER_URL = "https://multibot.pro/api/embeds/images/nfmpvssumgp3km0o"
 TICKET_BANNER_URL = "https://multibot.pro/api/embeds/images/g4mmec3lwfcrwi4l"
 
